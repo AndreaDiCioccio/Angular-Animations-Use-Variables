@@ -1,0 +1,18 @@
+.square{
+    position:relative;
+    width: 100px;
+    height: 100px;
+    left:0;
+    color: white;
+    background-color:rgb(63, 63, 206);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text{
+    width: 70px;
+}
+button{
+    margin-top:5px;
+}
