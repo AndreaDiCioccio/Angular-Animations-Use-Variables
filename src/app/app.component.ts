@@ -15,7 +15,7 @@ import { trigger, state, transition, animate, style } from '@angular/animations'
         state('right', 
             style({
                 left:'{{left}}',
-            }), {params: {left: 250}}
+            }), {params: {left: '250px'}}
         ),
 
         transition('left => right', [
@@ -31,7 +31,7 @@ import { trigger, state, transition, animate, style } from '@angular/animations'
 export class AppComponent {
   
     position:string = 'left'/*  */
-    leftPosition:string = '500px'
+    leftPosition:string = '300px'
     animationTime:string = '1000ms'
 
     move(){
