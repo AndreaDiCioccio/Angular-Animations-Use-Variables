@@ -15,14 +15,14 @@ import { trigger, state, transition, animate, style } from '@angular/animations'
         state('right', 
             style({
                 left:'{{left}}',
-            }), {params: {left: '250px'}}
+            }), {params: {left: '250px'}}  // parameter passed in the template
         ),
 
         transition('left => right', [
-            animate('{{time}}')
+            animate('{{time}}')  // parameter passed in the template
         ]),
         transition('right => left', [
-            animate('{{time}}') 
+            animate('{{time}}')  // parameter passed in the template
         ])
     ])
   ]
@@ -39,4 +39,5 @@ export class AppComponent {
         this.leftPosition.slice(-2) == 'px' ? null : this.leftPosition = this.leftPosition + 'px'
         this.position == 'left' ? this.position = 'right' : this.position = 'left'
     }
+    
 }
